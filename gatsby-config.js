@@ -7,8 +7,6 @@ module.exports = {
     countryCode: 'HU',
   },
   plugins: [
-    'gatsby-plugin-chakra-ui',
-    'gatsby-plugin-emotion',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

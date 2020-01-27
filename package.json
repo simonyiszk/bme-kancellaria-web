@@ -12,13 +12,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@chakra-ui/core": "^0.5.2",
-    "@emotion/core": "^10.0.27",
-    "@emotion/styled": "^10.0.27",
-    "emotion-theming": "^10.0.27",
     "gatsby": "^2.19.5",
-    "gatsby-plugin-chakra-ui": "^0.1.2",
-    "gatsby-plugin-emotion": "^4.1.21",
     "gatsby-plugin-manifest": "^2.2.38",
     "gatsby-plugin-preact": "^3.1.25",
     "gatsby-plugin-react-helmet-async": "^1.0.14",
