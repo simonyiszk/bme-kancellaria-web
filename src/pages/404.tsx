@@ -7,11 +7,11 @@ export default function NotFoundPage(): JSX.Element {
   return (
     <Layout>
       <Helmet>
-        <title>Page not found</title>
+        <title>Nem található</title>
       </Helmet>
 
-      <h1>Page not found</h1>
-      <p>The requested page is unavailable.</p>
+      <h1>Nem található</h1>
+      <p>A keresett oldal nem található.</p>
     </Layout>
   );
 }
