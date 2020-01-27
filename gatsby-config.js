@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Strict Starter',
+    title: 'BME Kancellária',
     description:
-      'Demo for a Gatsby starter with strict linting and auto-formatting rules.',
-    languageCode: 'en',
-    countryCode: 'US',
+      'A Budapesti Műszaki és Gazdaságtudományi Egyetem Kancelláriájának hivatalos weboldala.',
+    languageCode: 'hu',
+    countryCode: 'HU',
   },
   plugins: [
     'gatsby-plugin-chakra-ui',
@@ -12,11 +12,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Gatsby Strict Starter',
-        short_name: 'starter',
+        name: 'BME Kancellária',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: 'white',
+        theme_color: '#a6192e',
         display: 'minimal-ui',
         icon: 'src/assets/favicon.png',
       },

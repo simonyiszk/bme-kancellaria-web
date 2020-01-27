@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-strict",
+  "name": "bme-kancellaria",
   "private": true,
   "scripts": {
     "build": "gatsby build",
