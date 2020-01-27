@@ -20,6 +20,7 @@ module.exports = {
         icon: 'src/assets/favicon.png',
       },
     },
+    'gatsby-plugin-preact',
     'gatsby-plugin-react-helmet-async',
     'gatsby-plugin-typescript',
   ],
