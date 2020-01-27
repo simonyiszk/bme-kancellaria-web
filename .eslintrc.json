@@ -23,5 +23,14 @@
 
     // Using a type system makes it safe enough to spread props
     "react/jsx-props-no-spreading": "off"
+  },
+
+  "settings": {
+    // Allow imports from 'react'
+    "import/resolver": {
+      "alias": {
+        "map": [["react", "preact"]]
+      }
+    }
   }
 }
