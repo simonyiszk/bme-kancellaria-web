@@ -8,7 +8,7 @@ type ApparentComponentProps<
   ? JSX.LibraryManagedAttributes<C, P>
   : React.ComponentProps<C>;
 
-export interface BoxProps<C = React.ElementType> {
+export interface BoxProps<C extends React.ElementType = React.ElementType> {
   as?: C;
 }
 
