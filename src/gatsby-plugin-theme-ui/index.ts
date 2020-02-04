@@ -20,14 +20,13 @@ export default {
     '2xl': '3rem', // 1.25 ** +5
   },
   fontWeights: {
-    // TODO
     body: 400,
     heading: 400,
     bold: 600,
   },
   lineHeights: {
-    body: 1.5,
-    heading: 1.25, // TODO
+    body: 1.625,
+    heading: 1.25,
   },
   colors: {
     text: '#373a36', // PANTONE 447 C
@@ -39,6 +38,16 @@ export default {
         text: '#dbdcdb', // PANTONE Cool Gray 1 XGC
         background: '#24282b', // PANTONE 426 XGC
       },
+    },
+  },
+  text: {
+    heading: {
+      letterSpacing: '0.05em',
+    },
+  },
+  links: {
+    nav: {
+      fontWeight: 'heading',
     },
   },
   styles: {
