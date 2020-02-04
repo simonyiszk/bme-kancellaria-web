@@ -30,14 +30,14 @@ export default {
     heading: 1.25, // TODO
   },
   colors: {
-    text: '#53565a', // PANTONE Cool Gray 11 C
+    text: '#373a36', // PANTONE 447 C
     background: 'white',
     primary: '#a6192e', // PANTONE 187 C
-    muted: '#97999b', // PANTONE Cool Gray 7 C
+    // TODO: muted: '#97999b', // PANTONE Cool Gray 7 C
     modes: {
       dark: {
-        text: 'white',
-        background: '#3f4443', // PANTONE 446 C
+        text: '#dbdcdb', // PANTONE Cool Gray 1 XGC
+        background: '#212322', // PANTONE 419 C
       },
     },
   },
