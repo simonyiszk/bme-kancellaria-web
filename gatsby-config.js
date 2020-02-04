@@ -6,6 +6,7 @@ module.exports = {
         name: 'BME Kancellária',
         description:
           'A Budapesti Műszaki és Gazdaságtudományi Egyetem Kancelláriájának hivatalos weboldala.',
+        categories: ['education', 'finance', 'news'],
         display: 'minimal-ui',
         theme_color: '#a6192e',
         background_color: 'white',
