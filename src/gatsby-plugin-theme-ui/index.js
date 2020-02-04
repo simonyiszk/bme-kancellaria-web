@@ -1,5 +1,5 @@
-import { base } from '@theme-ui/presets';
+import theme from '@theme-ui/preset-base';
 
 export default {
-  ...base,
+  ...theme,
 };
