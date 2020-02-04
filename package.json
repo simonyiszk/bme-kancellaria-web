@@ -18,11 +18,12 @@
     "gatsby-plugin-manifest": "^2.2.41",
     "gatsby-plugin-preact": "^3.1.26",
     "gatsby-plugin-react-helmet-async": "^1.0.15",
-    "gatsby-plugin-treat": "^1.2.3",
+    "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-plugin-typescript": "^2.1.27",
+    "gatsby-theme-style-guide": "^0.3.1",
     "preact": "^10.2.1",
     "react-helmet-async": "^1.0.4",
-    "treat": "^1.2.4",
+    "theme-ui": "^0.3.1",
     "typescript": "^3.7.5"
   },
   "devDependencies": {

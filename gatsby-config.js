@@ -20,7 +20,8 @@ module.exports = {
     },
     'gatsby-plugin-preact',
     'gatsby-plugin-react-helmet-async',
-    'gatsby-plugin-treat',
+    'gatsby-plugin-theme-ui',
     'gatsby-plugin-typescript',
+    'gatsby-theme-style-guide',
   ],
 };
