@@ -5,6 +5,8 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
+import Footer from './Footer';
+
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -40,7 +42,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
 
       <main>{children}</main>
 
-      <footer>{/* TODO */}</footer>
+      <Footer />
     </React.StrictMode>
   );
 }
