@@ -9,12 +9,12 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps): JSX.Element {
   const data = useStaticQuery(graphql`
     {
-      site {
-        siteMetadata {
-          title
+      sitePlugin(name: { eq: "gatsby-plugin-manifest" }) {
+        name
+        pluginOptions {
+          name
           description
-          languageCode
-          countryCode
+          lang
         }
       }
     }
@@ -23,15 +23,13 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
   return (
     <React.StrictMode>
       <Helmet
-        titleTemplate={`%s - ${data.site.siteMetadata.title}`}
-        defaultTitle={data.site.siteMetadata.title}
+        titleTemplate={`%s - ${data.sitePlugin.pluginOptions.name}`}
+        defaultTitle={data.sitePlugin.pluginOptions.name}
       >
-        <html lang={data.site.siteMetadata.languageCode} />
-        <meta name="description" content={data.site.siteMetadata.description} />
-
+        <html lang={data.sitePlugin.pluginOptions.lang} />
         <meta
-          property="og:locale"
-          content={`${data.site.siteMetadata.languageCode}_${data.site.siteMetadata.countryCode}`}
+          name="description"
+          content={data.sitePlugin.pluginOptions.description}
         />
       </Helmet>
 

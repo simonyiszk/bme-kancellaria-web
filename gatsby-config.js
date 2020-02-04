@@ -1,21 +1,17 @@
 module.exports = {
-  siteMetadata: {
-    title: 'BME Kancellária',
-    description:
-      'A Budapesti Műszaki és Gazdaságtudományi Egyetem Kancelláriájának hivatalos weboldala.',
-    languageCode: 'hu',
-    countryCode: 'HU',
-  },
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'BME Kancellária',
-        start_url: '/',
-        background_color: 'white',
-        theme_color: '#a6192e',
+        description:
+          'A Budapesti Műszaki és Gazdaságtudományi Egyetem Kancelláriájának hivatalos weboldala.',
         display: 'minimal-ui',
+        theme_color: '#a6192e',
+        background_color: 'white',
         icon: 'src/assets/favicon.png',
+        lang: 'hu-HU',
+        start_url: '/',
       },
     },
     'gatsby-plugin-preact',
