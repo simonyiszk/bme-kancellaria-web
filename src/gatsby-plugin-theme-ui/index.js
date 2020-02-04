@@ -37,7 +37,7 @@ export default {
     modes: {
       dark: {
         text: '#dbdcdb', // PANTONE Cool Gray 1 XGC
-        background: '#212322', // PANTONE 419 C
+        background: '#24282b', // PANTONE 426 XGC
       },
     },
   },
