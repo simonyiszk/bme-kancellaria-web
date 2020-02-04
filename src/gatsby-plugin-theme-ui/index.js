@@ -49,7 +49,7 @@ export default {
       h1: { fontSize: '2xl' },
       h2: { fontSize: 'xl' },
       h3: { fontSize: 'lg' },
-      a: { color: 'primary' },
     },
+    a: { color: 'primary' },
   },
 };
