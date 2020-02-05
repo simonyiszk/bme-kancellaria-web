@@ -26,7 +26,6 @@ export default {
   },
   lineHeights: {
     body: 1.625,
-    heading: 1.25,
   },
   colors: {
     text: '#373a36', // PANTONE 447 C
@@ -52,12 +51,33 @@ export default {
   },
   styles: {
     root: {
+      // TODO: Remove baseline visualization
+      backgroundImage: 'linear-gradient(#eee 1px, transparent 1px)',
+      backgroundSize: '100% 6.5px',
+      padding: '0 1rem',
+
       fontFamily: 'body',
       fontWeight: 'body',
       lineHeight: 'body',
-      h1: { fontSize: '2xl' },
-      h2: { fontSize: 'xl' },
-      h3: { fontSize: 'lg' },
+      p: { marginBottom: '1.219rem !important' }, // 3 * 6.5px = 19.5px (75%)
+      // TODO: Convert marginBottoms to `em`
+      h1: {
+        fontSize: '2xl',
+        lineHeight: 1.083, // 8 * 6.5px = 52px
+        marginBottom: '2.59375rem !important',
+      },
+      h2: {
+        fontSize: 'xl',
+        lineHeight: 1.219, // 6 * 6.5px = 39px
+        marginBottom: '1.78125rem !important',
+        paddingTop: '1.0625rem',
+      },
+      h3: {
+        fontSize: 'lg',
+        lineHeight: 1.354, // 5 * 6.5px = 32.5px
+        marginBottom: '1.375rem !important',
+        paddingTop: '0.65625rem', // Previously 0.25rem
+      },
     },
     a: { color: 'primary' },
   },
