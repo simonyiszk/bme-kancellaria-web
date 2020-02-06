@@ -25,7 +25,7 @@ export default {
     bold: 600,
   },
   letterSpacings: {
-    heading: '0.05em',
+    heading: '0.025em',
   },
   lineHeights: {
     body: 1.625,
