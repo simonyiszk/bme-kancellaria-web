@@ -17,6 +17,13 @@ export default function Footer(): JSX.Element {
       />
 
       <Styled.h2>Rendezvények, terembérlés</Styled.h2>
+      <Contact
+        name="Major Sándor"
+        jobTitle="Igazgatási ügyintéző"
+        telephone="+36 1 463 3868"
+        email="rendezveny@mail.bme.hu"
+        address="1118 Budapest, Műegyetem rkp. 7–9., 2. em. HSZI"
+      />
     </footer>
   );
 }
