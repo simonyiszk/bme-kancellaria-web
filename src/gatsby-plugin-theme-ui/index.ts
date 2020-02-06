@@ -41,8 +41,11 @@ export default {
   },
   text: {
     heading: {
+      color: 'text',
+      fontFamily: 'heading',
+      fontWeight: 'heading',
       letterSpacing: '0.05em',
-      marginBottom: '0.8125em', // TODO
+      margin: '0 0 0.8125em',
     },
   },
   links: {
@@ -52,35 +55,31 @@ export default {
   },
   styles: {
     root: {
-      // TODO: Remove baseline visualization
-      backgroundImage: 'linear-gradient(#eee 1px, transparent 1px)',
-      backgroundSize: '100% 13px',
-      backgroundPosition: 'bottom 12px left',
-      padding: '1rem',
-
       fontFamily: 'body',
       fontWeight: 'body',
       lineHeight: 'body',
-      p: { marginBottom: '1.219rem !important' }, // 3 * 6.5px = 19.5px (75%)
-      // TODO: Convert marginBottoms to `em`
-      h1: {
-        fontSize: '2xl',
-        lineHeight: 1.083, // 8 * 6.5px = 52px
-        marginBottom: '0.8125em !important',
-      },
-      h2: {
-        fontSize: 'xl',
-        lineHeight: 1.219, // 6 * 6.5px = 39px
-        marginBottom: '0.8125em !important',
-        paddingTop: '0.40625em',
-      },
-      h3: {
-        fontSize: 'lg',
-        lineHeight: 1.354, // 5 * 6.5px = 32.5px
-        marginBottom: '0.8125em !important',
-        paddingTop: '0.271em',
-      },
     },
     a: { color: 'primary' },
+    h1: {
+      variant: 'text.heading',
+      fontSize: '2xl',
+      lineHeight: 1.083, // 8 * 6.5px = 52px
+    },
+    h2: {
+      variant: 'text.heading',
+      fontSize: 'xl',
+      lineHeight: 1.219, // 6 * 6.5px = 39px
+      paddingTop: '0.40625em', // 2 * 6.5px = 13px
+    },
+    h3: {
+      variant: 'text.heading',
+      fontSize: 'lg',
+      lineHeight: 1.354, // 5 * 6.5px = 32.5px
+      paddingTop: '0.271em', // 6.5px
+    },
+    p: {
+      color: 'text',
+      margin: '0 0 1.21875em', // 3 * 6.5px = 19.5px (75% of type size)
+    },
   },
 };
