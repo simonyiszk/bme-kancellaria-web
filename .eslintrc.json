@@ -29,7 +29,7 @@
     // Allow imports from 'react'
     "import/resolver": {
       "alias": {
-        "map": [["react", "preact"]]
+        "map": [["react", "preact/compat"]]
       }
     }
   }
