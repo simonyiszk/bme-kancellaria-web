@@ -38,7 +38,7 @@ export default {
       fontFamily: 'heading',
       fontWeight: 'heading',
       letterSpacing: '0.05em',
-      margin: '0.8125em 0',
+      my: '0.8125em',
     },
   },
   links: {
@@ -62,16 +62,16 @@ export default {
       variant: 'text.heading',
       fontSize: 'xl',
       lineHeight: 1.219, // 6 * 6.5px = 39px
-      paddingTop: '0.40625em', // 2 * 6.5px = 13px
+      pt: '0.40625em', // 2 * 6.5px = 13px
     },
     h3: {
       variant: 'text.heading',
       fontSize: 'lg',
       lineHeight: 1.354, // 5 * 6.5px = 32.5px
-      paddingTop: '0.271em', // 6.5px
+      pt: '0.271em', // 6.5px
     },
     p: {
-      margin: '1.21875em 0', // 3 * 6.5px = 19.5px (75% of type size)
+      my: '1.21875em', // 3 * 6.5px = 19.5px (75% of type size)
     },
   },
 };
