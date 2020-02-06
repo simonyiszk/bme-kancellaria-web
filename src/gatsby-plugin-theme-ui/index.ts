@@ -24,6 +24,9 @@ export default {
     heading: 400,
     bold: 600,
   },
+  letterSpacings: {
+    heading: '0.05em',
+  },
   lineHeights: {
     body: 1.625,
   },
@@ -37,7 +40,7 @@ export default {
     heading: {
       fontFamily: 'heading',
       fontWeight: 'heading',
-      letterSpacing: '0.05em',
+      letterSpacing: 'heading',
       my: '0.8125em',
     },
   },
