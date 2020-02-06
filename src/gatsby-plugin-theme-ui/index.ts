@@ -44,7 +44,7 @@ export default {
       fontFamily: 'heading',
       fontWeight: 'heading',
       letterSpacing: '0.05em',
-      margin: '0 0 0.8125em',
+      margin: '0.8125em 0',
     },
   },
   links: {
@@ -77,7 +77,7 @@ export default {
       paddingTop: '0.271em', // 6.5px
     },
     p: {
-      margin: '0 0 1.21875em', // 3 * 6.5px = 19.5px (75% of type size)
+      margin: '1.21875em 0', // 3 * 6.5px = 19.5px (75% of type size)
     },
   },
 };
