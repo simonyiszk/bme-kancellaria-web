@@ -1,12 +1,13 @@
-import React from 'react';
-import { Box, Heading, NavLink } from 'theme-ui';
+/** @jsx jsx */
+
+import { jsx, Styled } from 'theme-ui';
 
 import Contact from './Contact';
 
 export default function Footer(): JSX.Element {
   return (
-    <Box as="footer" bg="text" color="background">
-      <Heading>Kommunikáció</Heading>
+    <footer sx={{ bg: 'text', color: 'background' }}>
+      <Styled.h2>Kommunikáció</Styled.h2>
       <Contact
         name="Kovács Klára"
         jobTitle="Ügyvivő szakértő"
@@ -15,7 +16,7 @@ export default function Footer(): JSX.Element {
         address="1118 Budapest, Műegyetem rkp. 7–9., 2. em. 202"
       />
 
-      <Heading>Rendezvények, terembérlés</Heading>
-    </Box>
+      <Styled.h2>Rendezvények, terembérlés</Styled.h2>
+    </footer>
   );
 }
