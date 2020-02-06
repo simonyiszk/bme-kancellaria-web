@@ -2,7 +2,7 @@
 
 import { jsx, Link, Styled } from 'theme-ui';
 
-import Layout from '../components/Layout';
+import { Layout } from '../components/Layout';
 
 export default function IndexPage(): JSX.Element {
   return (

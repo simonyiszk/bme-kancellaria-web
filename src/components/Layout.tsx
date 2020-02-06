@@ -8,13 +8,13 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { jsx } from 'theme-ui';
 
-import Footer from './Footer';
+import { Footer } from './Footer';
 
 export interface LayoutProps {
   children: React.ReactNode;
 }
 
-export default function Layout({ children }: LayoutProps): JSX.Element {
+export function Layout({ children }: LayoutProps): JSX.Element {
   const data = useStaticQuery(graphql`
     {
       sitePlugin(name: { eq: "gatsby-plugin-manifest" }) {

@@ -11,7 +11,7 @@ export interface ContactProps
   address: string;
 }
 
-export default function Contact({
+export function Contact({
   name,
   jobTitle,
   telephone,

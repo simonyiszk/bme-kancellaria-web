@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavLink, Styled } from 'theme-ui';
 
-import Contact from './Contact';
+import { Contact } from './Contact';
 
 export type FooterProps = React.PropsWithoutRef<
   JSX.IntrinsicElements['footer']
 >;
 
-export default function Footer(props: FooterProps): JSX.Element {
+export function Footer(props: FooterProps): JSX.Element {
   return (
     <footer {...props}>
       <Styled.h2>Kommunikáció</Styled.h2>
