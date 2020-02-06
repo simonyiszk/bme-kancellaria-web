@@ -33,7 +33,7 @@ export default {
   colors: {
     text: '#373a36', // PANTONE 447 C
     background: 'white',
-    primary: '#a6192e', // PANTONE 187 C
+    primary: '#c5003e', // PANTONE 1935 C, TODO: Consider #ce0037 and #c8102e
     // TODO: muted: '#97999b', // PANTONE Cool Gray 7 C
   },
   text: {
