@@ -1,12 +1,12 @@
 export default {
   space: {
-    1: 4,
-    2: 8,
-    3: 12,
-    4: 16,
-    5: 20,
-    6: 24,
-    8: 32,
+    1: '0.25rem',
+    2: '0.5rem',
+    3: '0.75rem',
+    4: '1rem',
+    5: '1.25rem',
+    6: '1.5rem',
+    8: '2rem',
   },
   fonts: {
     body: "'Inter', system-ui, sans-serif",
