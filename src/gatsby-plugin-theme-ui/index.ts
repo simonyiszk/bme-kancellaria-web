@@ -41,7 +41,6 @@ export default {
   },
   text: {
     heading: {
-      color: 'text',
       fontFamily: 'heading',
       fontWeight: 'heading',
       letterSpacing: '0.05em',
@@ -78,7 +77,6 @@ export default {
       paddingTop: '0.271em', // 6.5px
     },
     p: {
-      color: 'text',
       margin: '0 0 1.21875em', // 3 * 6.5px = 19.5px (75% of type size)
     },
   },
