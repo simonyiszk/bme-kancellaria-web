@@ -1,5 +1,5 @@
 import React from 'react';
-import { Styled } from 'theme-ui';
+import { NavLink, Styled } from 'theme-ui';
 
 import Contact from './Contact';
 
@@ -27,6 +27,52 @@ export default function Footer(props: FooterProps): JSX.Element {
         email="rendezveny@mail.bme.hu"
         address="1118 Budapest, Műegyetem rkp. 7–9., 2. em. HSZI"
       />
+
+      <Styled.h2>Hasznos oldalak</Styled.h2>
+      <ul>
+        <li>
+          <NavLink href="https://kth.bme.hu/">KTH</NavLink>
+        </li>
+        <li>
+          <NavLink href="https://www.bme.hu/">BME.hu</NavLink>
+        </li>
+        <li>
+          <NavLink href="https://telefon.bme.hu/">Telefonkönyv</NavLink>
+        </li>
+        <li>
+          <NavLink href="https://www.mnb.hu/arfolyamok">MNB árfolyamok</NavLink>
+        </li>
+        <li>
+          <NavLink href="https://www.mnb.hu/Jegybanki_alapkamat_alakulasa">
+            Jegybanki alapkamat
+          </NavLink>
+        </li>
+        <li>
+          <NavLink href="https://nav.gov.hu/nav/szolgaltatasok/uzemanyag/uzemanyagarak">
+            NAV üzemanyagárak
+          </NavLink>
+        </li>
+      </ul>
+
+      <Styled.h2>Szolgáltatások</Styled.h2>
+      <ul>
+        <li>
+          <NavLink href="https://www.omikk.bme.hu/">Könyvtár</NavLink>
+        </li>
+        <li>
+          <NavLink href="https://net.bme.hu/">BMENET</NavLink>
+        </li>
+        <li>
+          <NavLink href="https://muegyetemiallasborze.hu/">
+            Műegyetemi Állásbörze
+          </NavLink>
+        </li>
+        <li>
+          <NavLink href="https://www.bme.hu/allaspalyazatok">
+            Álláspályázatok
+          </NavLink>
+        </li>
+      </ul>
     </footer>
   );
 }
