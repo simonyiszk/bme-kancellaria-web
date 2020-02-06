@@ -19,6 +19,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-theme-ui',
     'gatsby-plugin-typescript',
-    'gatsby-theme-style-guide',
+    // TODO: 'gatsby-theme-style-guide',
   ],
 };
