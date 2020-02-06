@@ -1,6 +1,5 @@
 /** @jsx jsx */
 
-import React from 'react';
 import { jsx, NavLink } from 'theme-ui';
 
 export interface ContactProps
