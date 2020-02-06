@@ -16,7 +16,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-preact',
-    'gatsby-plugin-react-helmet-async',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-theme-ui',
     'gatsby-plugin-typescript',
     'gatsby-theme-style-guide',

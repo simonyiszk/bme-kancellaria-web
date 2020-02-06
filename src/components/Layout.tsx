@@ -5,7 +5,7 @@ import 'typeface-oswald';
 
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import { jsx } from 'theme-ui';
 
 import Footer from './Footer';
