@@ -1,12 +1,15 @@
-/** @jsx jsx */
-
-import { jsx, Styled } from 'theme-ui';
+import React from 'react';
+import { Styled } from 'theme-ui';
 
 import Contact from './Contact';
 
-export default function Footer(): JSX.Element {
+export type FooterProps = React.PropsWithoutRef<
+  JSX.IntrinsicElements['footer']
+>;
+
+export default function Footer(props: FooterProps): JSX.Element {
   return (
-    <footer sx={{ bg: 'text', color: 'background' }}>
+    <footer {...props}>
       <Styled.h2>Kommunikáció</Styled.h2>
       <Contact
         name="Kovács Klára"

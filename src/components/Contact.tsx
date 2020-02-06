@@ -1,6 +1,5 @@
-/** @jsx jsx */
-
-import { jsx, NavLink } from 'theme-ui';
+import React from 'react';
+import { NavLink } from 'theme-ui';
 
 export interface ContactProps
   extends React.PropsWithoutRef<JSX.IntrinsicElements['address']> {

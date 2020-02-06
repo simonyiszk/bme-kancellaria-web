@@ -1,9 +1,12 @@
+/** @jsx jsx */
+
 import 'typeface-inter';
 import 'typeface-oswald';
 
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { jsx } from 'theme-ui';
 
 import Footer from './Footer';
 
@@ -42,7 +45,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
 
       <main>{children}</main>
 
-      <Footer />
+      <Footer sx={{ bg: 'text', color: 'background' }} />
     </React.StrictMode>
   );
 }
