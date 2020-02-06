@@ -9,7 +9,7 @@ export default {
     8: '2rem',
   },
   fonts: {
-    body: "'Inter', system-ui, sans-serif",
+    body: "'Open Sans', system-ui, sans-serif",
     heading: "'Oswald', system-ui, sans-serif",
   },
   fontSizes: {

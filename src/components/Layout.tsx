@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import 'typeface-inter';
+import 'typeface-open-sans';
 import 'typeface-oswald';
 
 import { graphql, useStaticQuery } from 'gatsby';
