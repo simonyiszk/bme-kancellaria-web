@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet-async';
 
 import Footer from './Footer';
 
-interface LayoutProps {
+export interface LayoutProps {
   children: React.ReactNode;
 }
 
