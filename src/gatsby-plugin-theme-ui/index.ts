@@ -25,7 +25,7 @@ export default {
     bold: 600,
   },
   letterSpacings: {
-    heading: '0.025em',
+    wide: '0.025em',
   },
   lineHeights: {
     body: 1.625,
@@ -40,8 +40,12 @@ export default {
     heading: {
       fontFamily: 'heading',
       fontWeight: 'heading',
-      letterSpacing: 'heading',
+      letterSpacing: 'wide',
       my: '0.8125em',
+    },
+    caps: {
+      textTransform: 'uppercase',
+      letterSpacing: 'wide',
     },
   },
   links: {

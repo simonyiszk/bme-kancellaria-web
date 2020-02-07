@@ -1,5 +1,6 @@
-import React from 'react';
-import { Link, Styled } from 'theme-ui';
+/** @jsx jsx */
+
+import { jsx, Link, Styled } from 'theme-ui';
 
 import { Contact } from './Contact';
 
@@ -29,7 +30,7 @@ export function Footer(props: FooterProps): JSX.Element {
       />
 
       <Styled.h2>Hasznos oldalak</Styled.h2>
-      <ul>
+      <ul sx={{ variant: 'text.caps' }}>
         <li>
           <Link href="https://kth.bme.hu/" variant="inverted">
             KTH
@@ -69,7 +70,7 @@ export function Footer(props: FooterProps): JSX.Element {
       </ul>
 
       <Styled.h2>Szolgáltatások</Styled.h2>
-      <ul>
+      <ul sx={{ variant: 'text.caps' }}>
         <li>
           <Link href="https://www.omikk.bme.hu/" variant="inverted">
             Könyvtár
