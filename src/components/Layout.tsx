@@ -39,6 +39,7 @@ export function Layout({ children }: LayoutProps): JSX.Element {
           name="description"
           content={data.sitePlugin.pluginOptions.description}
         />
+        <meta name="viewport" content="viewport-fit=cover" />
       </Helmet>
 
       <header>{/* TODO */}</header>

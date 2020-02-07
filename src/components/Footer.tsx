@@ -13,7 +13,8 @@ export function Footer(props: FooterProps): JSX.Element {
     <Flex
       as="footer"
       sx={{
-        // TODO: Horizontal padding
+        variant: 'layout.container',
+        flexWrap: 'wrap',
         alignItems: 'center',
         justifyContent: 'space-evenly',
       }}
@@ -39,7 +40,7 @@ export function Footer(props: FooterProps): JSX.Element {
         />
       </div>
 
-      <Flex sx={{ justifyContent: 'space-between' }}>
+      <Flex>
         <div>
           <Styled.h2>Hasznos oldalak</Styled.h2>
           <ul sx={{ variant: 'text.caps' }}>

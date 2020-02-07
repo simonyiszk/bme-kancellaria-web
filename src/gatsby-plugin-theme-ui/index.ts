@@ -36,6 +36,12 @@ export default {
     primary: '#c5003e', // PANTONE 1935 C, TODO: Consider #ce0037 and #c8102e
     lightgray: '#d9d9d6', // PANTONE Cool Gray 1 C
   },
+  layout: {
+    container: {
+      pl: 'calc(1rem + env(safe-area-inset-left))',
+      pr: 'calc(1rem + env(safe-area-inset-right))',
+    },
+  },
   text: {
     heading: {
       fontFamily: 'heading',
