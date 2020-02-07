@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Styled } from 'theme-ui';
+import { Link, Styled } from 'theme-ui';
 
 import { Contact } from './Contact';
 
@@ -31,46 +31,64 @@ export function Footer(props: FooterProps): JSX.Element {
       <Styled.h2>Hasznos oldalak</Styled.h2>
       <ul>
         <li>
-          <NavLink href="https://kth.bme.hu/">KTH</NavLink>
+          <Link href="https://kth.bme.hu/" variant="inverted">
+            KTH
+          </Link>
         </li>
         <li>
-          <NavLink href="https://www.bme.hu/">BME.hu</NavLink>
+          <Link href="https://www.bme.hu/" variant="inverted">
+            BME.hu
+          </Link>
         </li>
         <li>
-          <NavLink href="https://telefon.bme.hu/">Telefonkönyv</NavLink>
+          <Link href="https://telefon.bme.hu/" variant="inverted">
+            Telefonkönyv
+          </Link>
         </li>
         <li>
-          <NavLink href="https://www.mnb.hu/arfolyamok">MNB árfolyamok</NavLink>
+          <Link href="https://www.mnb.hu/arfolyamok" variant="inverted">
+            MNB árfolyamok
+          </Link>
         </li>
         <li>
-          <NavLink href="https://www.mnb.hu/Jegybanki_alapkamat_alakulasa">
+          <Link
+            href="https://www.mnb.hu/Jegybanki_alapkamat_alakulasa"
+            variant="inverted"
+          >
             Jegybanki alapkamat
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink href="https://nav.gov.hu/nav/szolgaltatasok/uzemanyag/uzemanyagarak">
+          <Link
+            href="https://nav.gov.hu/nav/szolgaltatasok/uzemanyag/uzemanyagarak"
+            variant="inverted"
+          >
             NAV üzemanyagárak
-          </NavLink>
+          </Link>
         </li>
       </ul>
 
       <Styled.h2>Szolgáltatások</Styled.h2>
       <ul>
         <li>
-          <NavLink href="https://www.omikk.bme.hu/">Könyvtár</NavLink>
+          <Link href="https://www.omikk.bme.hu/" variant="inverted">
+            Könyvtár
+          </Link>
         </li>
         <li>
-          <NavLink href="https://net.bme.hu/">BMENET</NavLink>
+          <Link href="https://net.bme.hu/" variant="inverted">
+            BMENET
+          </Link>
         </li>
         <li>
-          <NavLink href="https://muegyetemiallasborze.hu/">
+          <Link href="https://muegyetemiallasborze.hu/" variant="inverted">
             Műegyetemi Állásbörze
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink href="https://www.bme.hu/allaspalyazatok">
+          <Link href="https://www.bme.hu/allaspalyazatok" variant="inverted">
             Álláspályázatok
-          </NavLink>
+          </Link>
         </li>
       </ul>
     </footer>

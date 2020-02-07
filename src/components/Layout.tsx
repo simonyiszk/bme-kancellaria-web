@@ -45,7 +45,7 @@ export function Layout({ children }: LayoutProps): JSX.Element {
 
       <main>{children}</main>
 
-      <Footer sx={{ bg: 'text', color: 'background' }} />
+      <Footer sx={{ bg: 'text', color: 'muted' }} />
     </React.StrictMode>
   );
 }

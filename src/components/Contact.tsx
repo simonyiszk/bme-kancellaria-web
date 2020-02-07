@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { jsx, NavLink } from 'theme-ui';
+import { jsx, Link } from 'theme-ui';
 
 export interface ContactProps
   extends React.PropsWithoutRef<JSX.IntrinsicElements['address']> {
@@ -31,23 +31,19 @@ export function Contact({
         {jobTitle}
       </span>
       <br />
-      <NavLink
+      <Link
         href={`tel:${telephone.replace(/\s/g, '-')}`}
         itemProp="telephone"
-        sx={{ fontWeight: 'body' }}
+        variant="inverted"
       >
         {telephone}
-      </NavLink>
+      </Link>
       <br />
-      <NavLink
-        href={`mailto:${email}`}
-        itemProp="email"
-        sx={{ fontWeight: 'body' }}
-      >
+      <Link href={`mailto:${email}`} itemProp="email" variant="inverted">
         {email}
-      </NavLink>
+      </Link>
       <br />
-      <NavLink
+      <Link
         href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
           // Truncate building-specific data, e.g. floor and room number
           address
@@ -56,9 +52,10 @@ export function Contact({
             .join(','),
         )}`}
         itemProp="address"
+        variant="inverted"
       >
         {address}
-      </NavLink>
+      </Link>
     </address>
   );
 }

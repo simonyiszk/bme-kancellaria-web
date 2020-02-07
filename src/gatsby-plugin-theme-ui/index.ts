@@ -34,7 +34,7 @@ export default {
     text: '#373a36', // PANTONE 447 C
     background: 'white',
     primary: '#c5003e', // PANTONE 1935 C, TODO: Consider #ce0037 and #c8102e
-    // TODO: muted: '#97999b', // PANTONE Cool Gray 7 C
+    muted: '#d9d9d6', // PANTONE Cool Gray 1 C
   },
   text: {
     heading: {
@@ -48,6 +48,13 @@ export default {
     nav: {
       fontWeight: 'heading',
     },
+    inverted: {
+      textDecoration: 'none',
+      color: 'inherit',
+      ':hover, :focus, .active': {
+        color: 'background',
+      },
+    },
   },
   styles: {
     root: {
@@ -55,7 +62,10 @@ export default {
       fontWeight: 'body',
       lineHeight: 'body',
     },
-    a: { color: 'primary' },
+    a: {
+      color: 'primary',
+      textUnderlineOffset: '0.25em',
+    },
     h1: {
       variant: 'text.heading',
       fontSize: '2xl',
