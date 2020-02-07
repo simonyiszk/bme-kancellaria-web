@@ -48,6 +48,10 @@ export default {
       fontWeight: 'heading',
       letterSpacing: 'wide',
       my: '0.8125em',
+      ':first-child': {
+        mt: 0,
+        pt: 0,
+      },
     },
     caps: {
       textTransform: 'uppercase',
