@@ -34,7 +34,7 @@ export default {
     text: '#373a36', // PANTONE 447 C
     background: 'white',
     primary: '#c5003e', // PANTONE 1935 C, TODO: Consider #ce0037 and #c8102e
-    muted: '#d9d9d6', // PANTONE Cool Gray 1 C
+    lightgray: '#d9d9d6', // PANTONE Cool Gray 1 C
   },
   text: {
     heading: {
