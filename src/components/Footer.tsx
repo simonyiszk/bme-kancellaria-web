@@ -13,7 +13,6 @@ export function Footer(props: FooterProps): JSX.Element {
     <Flex
       as="footer"
       sx={{
-        variant: 'layout.container',
         flexWrap: 'wrap',
         alignItems: 'center',
         justifyContent: 'space-evenly',

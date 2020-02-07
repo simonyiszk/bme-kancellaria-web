@@ -46,7 +46,13 @@ export function Layout({ children }: LayoutProps): JSX.Element {
 
       <main>{children}</main>
 
-      <Footer sx={{ bg: 'text', color: 'lightgray' }} />
+      <Footer
+        sx={{
+          variant: 'layout.container',
+          bg: 'text',
+          color: 'lightgray',
+        }}
+      />
     </React.StrictMode>
   );
 }
