@@ -13,7 +13,7 @@ export function Footer(props: FooterProps): JSX.Element {
       as="footer"
       columnGap={32}
       sx={{
-        justifyContent: ['space-between', ['space-around', 'space-evenly']],
+        justifyContent: ['space-between', 'space-around', 'space-evenly'],
       }}
       {...props}
     >
@@ -40,10 +40,7 @@ export function Footer(props: FooterProps): JSX.Element {
       <div>
         <Cluster
           columnGap={24}
-          sx={{
-            flex: 1,
-            flexDirection: [null, null, 'column', null, 'row'],
-          }}
+          sx={{ flexDirection: [null, null, 'column', null, 'row'] }}
         >
           <div>
             <Styled.h2>Hasznos oldalak</Styled.h2>
