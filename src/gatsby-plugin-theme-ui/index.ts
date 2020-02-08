@@ -7,6 +7,10 @@ export default {
     5: '1.25rem',
     6: '1.5rem',
     8: '2rem',
+    10: '2.5rem',
+    12: '3rem',
+    16: '4rem',
+    20: '5rem',
   },
   fonts: {
     body: "'Open Sans', system-ui, sans-serif",
@@ -48,10 +52,6 @@ export default {
       fontWeight: 'heading',
       letterSpacing: 'wide',
       my: '0.8125em',
-      ':first-child': {
-        mt: 0,
-        pt: 0,
-      },
     },
     caps: {
       textTransform: 'uppercase',
