@@ -40,7 +40,6 @@ export function Footer(props: FooterProps): JSX.Element {
           flex: 1,
           display: 'flex',
           flexWrap: 'wrap',
-          minWidth: 'min-content',
           whiteSpace: 'nowrap',
         }}
       >
