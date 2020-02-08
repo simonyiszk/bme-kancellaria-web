@@ -12,6 +12,7 @@ export default {
     16: '4rem',
     20: '5rem',
   },
+  breakpoints: ['640px', '768px', '1024px', '1280px'],
   fonts: {
     body: "'Open Sans', system-ui, sans-serif",
     heading: "'Oswald', system-ui, sans-serif",

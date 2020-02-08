@@ -12,7 +12,10 @@ export function Footer(props: FooterProps): JSX.Element {
     <Cluster
       as="footer"
       columnGap={20}
-      sx={{ justifyContent: 'space-between' }}
+      sx={{
+        flexWrap: [null, null, 'nowrap'],
+        justifyContent: 'space-evenly',
+      }}
       {...props}
     >
       <div>
@@ -37,7 +40,6 @@ export function Footer(props: FooterProps): JSX.Element {
 
       <div
         sx={{
-          flex: 1,
           display: 'flex',
           flexWrap: 'wrap',
           whiteSpace: 'nowrap',

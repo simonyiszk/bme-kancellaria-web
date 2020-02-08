@@ -21,7 +21,6 @@ export function Cluster({
   return (
     <Flex
       sx={{
-        display: 'flex',
         flexWrap: 'wrap',
         mt: mt != null ? -mt : undefined,
         ml: ml != null ? -ml : undefined,
