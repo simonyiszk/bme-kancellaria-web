@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { jsx, Link, Styled } from 'theme-ui';
+import { Box, jsx, Link, Styled } from 'theme-ui';
 
 import { Cluster, ClusterProps } from './Cluster';
 import { Contact } from './Contact';
@@ -11,14 +11,9 @@ export function Footer(props: FooterProps): JSX.Element {
   return (
     <Cluster
       as="footer"
-      columnGap={20}
+      columnGap={32}
       sx={{
-        // flexWrap: [null, null, 'nowrap'],
-        justifyContent: [
-          'space-between',
-          null,
-          ['space-around', 'space-evenly'],
-        ],
+        justifyContent: ['space-between', ['space-around', 'space-evenly']],
       }}
       {...props}
     >
@@ -44,12 +39,16 @@ export function Footer(props: FooterProps): JSX.Element {
 
       <div>
         <Cluster
-          columnGap={16}
-          sx={{ flexDirection: ['column', null, null, null, 'row'] }}
+          columnGap={24}
+          sx={{ flexDirection: [null, null, 'column', null, 'row'] }}
         >
           <div>
             <Styled.h2>Hasznos oldalak</Styled.h2>
-            <ul sx={{ variant: 'text.caps' }}>
+            <Box
+              as="ul"
+              variant="lists.unstyled"
+              sx={{ variant: ['text.caps'] }}
+            >
               <li>
                 <Link href="https://kth.bme.hu/" variant="inverted">
                   KTH
@@ -86,12 +85,16 @@ export function Footer(props: FooterProps): JSX.Element {
                   NAV üzemanyagárak
                 </Link>
               </li>
-            </ul>
+            </Box>
           </div>
 
           <div>
             <Styled.h2>Szolgáltatások</Styled.h2>
-            <ul sx={{ variant: 'text.caps' }}>
+            <Box
+              as="ul"
+              variant="lists.unstyled"
+              sx={{ variant: ['text.caps'] }}
+            >
               <li>
                 <Link href="https://www.omikk.bme.hu/" variant="inverted">
                   Könyvtár
@@ -118,7 +121,7 @@ export function Footer(props: FooterProps): JSX.Element {
                   Álláspályázatok
                 </Link>
               </li>
-            </ul>
+            </Box>
           </div>
         </Cluster>
       </div>

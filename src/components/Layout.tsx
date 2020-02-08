@@ -51,6 +51,7 @@ export function Layout({ children }: LayoutProps): JSX.Element {
           variant: 'layout.container',
           bg: 'text',
           color: 'lightgray',
+          pb: 12,
         }}
       />
     </React.StrictMode>

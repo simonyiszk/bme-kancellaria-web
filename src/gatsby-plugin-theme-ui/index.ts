@@ -11,6 +11,8 @@ export default {
     12: '3rem',
     16: '4rem',
     20: '5rem',
+    24: '6rem',
+    32: '8rem',
   },
   breakpoints: ['640px', '768px', '1024px', '1280px'],
   fonts: {
@@ -69,6 +71,12 @@ export default {
       ':hover, :focus, .active': {
         color: 'background',
       },
+    },
+  },
+  lists: {
+    unstyled: {
+      listStyle: 'none',
+      pl: 0,
     },
   },
   styles: {
