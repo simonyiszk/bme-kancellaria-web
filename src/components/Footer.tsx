@@ -40,7 +40,10 @@ export function Footer(props: FooterProps): JSX.Element {
       <div>
         <Cluster
           columnGap={24}
-          sx={{ flexDirection: [null, null, 'column', null, 'row'] }}
+          sx={{
+            flex: 1,
+            flexDirection: [null, null, 'column', null, 'row'],
+          }}
         >
           <div>
             <Styled.h2>Hasznos oldalak</Styled.h2>
