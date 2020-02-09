@@ -11,10 +11,10 @@ import { jsx } from 'theme-ui';
 import { Footer } from './Footer';
 
 export interface LayoutProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
-export function Layout({ children }: LayoutProps): JSX.Element {
+export default function Layout({ children }: LayoutProps): JSX.Element {
   const data = useStaticQuery(graphql`
     {
       sitePlugin(name: { eq: "gatsby-plugin-manifest" }) {

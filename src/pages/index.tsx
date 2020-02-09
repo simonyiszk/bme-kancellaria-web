@@ -1,12 +1,12 @@
 /** @jsx jsx */
 
-import { jsx, Link, Styled } from 'theme-ui';
-
-import { Layout } from '../components/Layout';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import React from 'react';
+import { jsx, Styled } from 'theme-ui';
 
 export default function IndexPage(): JSX.Element {
   return (
-    <Layout>
+    <React.Fragment>
       <Styled.h1>Lorem ipsum</Styled.h1>
       <Styled.p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
@@ -23,7 +23,10 @@ export default function IndexPage(): JSX.Element {
         Lorem ipsum dolor sit amet consectetur adipisicing elit
       </Styled.h2>
       <Styled.p>
-        Lorem ipsum <Link href="https://www.bme.hu/">dolor sit amet</Link>{' '}
+        Lorem ipsum{' '}
+        <AniLink to="/404/" fade duration={10} sx={{ variant: 'styles.a' }}>
+          dolor sit amet
+        </AniLink>{' '}
         consectetur, adipisicing elit. Soluta, ad quasi totam repudiandae amet
         laborum vel a atque laboriosam officia magni. Eos hic velit impedit amet
         doloribus tempore repellendus nam!
@@ -43,6 +46,6 @@ export default function IndexPage(): JSX.Element {
         asperiores perferendis, consequuntur, numquam voluptatum magnam tempore
         recusandae placeat quam necessitatibus. Error, obcaecati.
       </Styled.p>
-    </Layout>
+    </React.Fragment>
   );
 }

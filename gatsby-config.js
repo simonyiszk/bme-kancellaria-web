@@ -18,6 +18,13 @@ module.exports = {
     'gatsby-plugin-preact',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-theme-ui',
+    {
+      resolve: 'gatsby-plugin-transition-link',
+      options: {
+        layout: require.resolve('./src/components/Layout.tsx'),
+        injectPageProps: false,
+      },
+    },
     'gatsby-plugin-typescript',
     // TODO: 'gatsby-theme-style-guide',
   ],
