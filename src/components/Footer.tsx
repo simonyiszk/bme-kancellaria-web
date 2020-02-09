@@ -15,9 +15,12 @@ export function Footer(props: FooterProps): JSX.Element {
       sx={theme => ({
         display: 'grid',
         gridAutoFlow: [null, null, 'column'],
-        alignItems: 'center',
-        justifyContent: ['space-around', 'space-evenly'],
         gridGap: `0 ${theme.space[32]}`,
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        '&': {
+          justifyContent: 'space-evenly',
+        },
       })}
       {...props}
     >

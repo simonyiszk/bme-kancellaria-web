@@ -45,8 +45,11 @@ export default {
   },
   layout: {
     container: {
-      pl: 'calc(1rem + env(safe-area-inset-left))',
-      pr: 'calc(1rem + env(safe-area-inset-right))',
+      px: '1rem',
+      '&': {
+        pl: 'calc(1rem + env(safe-area-inset-left))',
+        pr: 'calc(1rem + env(safe-area-inset-right))',
+      },
     },
   },
   text: {
