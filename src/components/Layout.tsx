@@ -39,7 +39,12 @@ export function Layout({ children }: LayoutProps): JSX.Element {
           name="description"
           content={data.sitePlugin.pluginOptions.description}
         />
-        <meta name="viewport" content="viewport-fit=cover" />
+
+        {/* Mobile optimizations */}
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+        />
       </Helmet>
 
       <header>{/* TODO */}</header>
