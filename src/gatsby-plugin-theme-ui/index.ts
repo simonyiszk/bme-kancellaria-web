@@ -70,7 +70,7 @@ export default {
     inverted: {
       textDecoration: 'none',
       color: 'inherit',
-      ':hover, :focus, .active': {
+      '&:hover, &:focus, &.active': {
         color: 'background',
       },
     },
