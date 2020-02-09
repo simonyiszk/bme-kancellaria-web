@@ -10,7 +10,7 @@ import { jsx } from 'theme-ui';
 
 import { Footer } from '../components/Footer';
 
-export interface LayoutProps {
+interface LayoutProps {
   children?: React.ReactNode;
 }
 
