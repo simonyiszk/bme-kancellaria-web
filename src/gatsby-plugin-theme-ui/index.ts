@@ -12,7 +12,6 @@ export default {
     16: '4rem',
     20: '5rem',
     24: '6rem',
-    32: '8rem',
   },
   breakpoints: ['640px', '768px', '1024px', '1280px'],
   fonts: {
