@@ -8,7 +8,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { jsx } from 'theme-ui';
 
-import { Footer } from './Footer';
+import { Footer } from '../components/Footer';
 
 export interface LayoutProps {
   children?: React.ReactNode;

@@ -21,7 +21,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-transition-link',
       options: {
-        layout: require.resolve('./src/components/Layout.tsx'),
+        layout: require.resolve('./src/layouts/index.tsx'),
         injectPageProps: false,
       },
     },
