@@ -34,6 +34,9 @@ export default {
     wide: '0.025em',
   },
   lineHeights: {
+    h1: 1.083, // 8 * 6.5px = 52px
+    h2: 1.219, // 6 * 6.5px = 39px
+    h3: 1.354, // 5 * 6.5px = 32.5px
     body: 1.625,
   },
   colors: {
@@ -41,6 +44,7 @@ export default {
     background: 'white',
     primary: '#c5003e', // PANTONE 1935 C, TODO: Consider #ce0037 and #c8102e
     lightgray: '#d9d9d6', // PANTONE Cool Gray 1 C
+    darkgray: '#888b8d', // PANTONE Cool Gray 8 C
   },
   layout: {
     container: {
@@ -56,7 +60,6 @@ export default {
       fontFamily: 'heading',
       fontWeight: 'heading',
       letterSpacing: 'wide',
-      my: '0.8125em',
     },
     caps: {
       textTransform: 'uppercase',
@@ -94,18 +97,21 @@ export default {
     h1: {
       variant: 'text.heading',
       fontSize: '2xl',
-      lineHeight: 1.083, // 8 * 6.5px = 52px
+      lineHeight: 'h1',
+      my: '0.8125em',
     },
     h2: {
       variant: 'text.heading',
       fontSize: 'xl',
-      lineHeight: 1.219, // 6 * 6.5px = 39px
+      lineHeight: 'h2',
+      my: '0.8125em',
       pt: '0.40625em', // 2 * 6.5px = 13px
     },
     h3: {
       variant: 'text.heading',
       fontSize: 'lg',
-      lineHeight: 1.354, // 5 * 6.5px = 32.5px
+      lineHeight: 'h3',
+      my: '0.8125em',
       pt: '0.271em', // 6.5px
     },
     p: {
