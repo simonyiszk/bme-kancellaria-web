@@ -20,7 +20,7 @@ export function NewsArticleTeaser({
 }: NewsArticleTeaserProps): JSX.Element {
   return (
     <article>
-      <Heading as="h2" sx={{ fontSize: 'l', lineHeight: 'h3', mb: 2 }}>
+      <Heading as="h3" sx={{ mb: 2 }}>
         Modern gyárak éjszakája a Műegyetemen
       </Heading>
       <time dateTime="2019-10-29" sx={{ color: 'darkgray' }}>

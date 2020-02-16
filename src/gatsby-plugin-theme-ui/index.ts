@@ -89,33 +89,29 @@ export default {
       fontFamily: 'body',
       fontWeight: 'body',
       lineHeight: 'body',
+      h1: {
+        variant: 'text.heading',
+        fontSize: '2xl',
+        lineHeight: 'h1',
+      },
+      h2: {
+        variant: 'text.heading',
+        fontSize: 'xl',
+        lineHeight: 'h2',
+      },
+      h3: {
+        variant: 'text.heading',
+        fontSize: 'lg',
+        lineHeight: 'h3',
+      },
     },
     a: {
       color: 'primary',
       textUnderlineOffset: '0.25em',
     },
-    h1: {
-      variant: 'text.heading',
-      fontSize: '2xl',
-      lineHeight: 'h1',
-      my: '0.8125em',
-    },
-    h2: {
-      variant: 'text.heading',
-      fontSize: 'xl',
-      lineHeight: 'h2',
-      my: '0.8125em',
-      pt: '0.40625em', // 2 * 6.5px = 13px
-    },
-    h3: {
-      variant: 'text.heading',
-      fontSize: 'lg',
-      lineHeight: 'h3',
-      my: '0.8125em',
-      pt: '0.271em', // 6.5px
-    },
-    p: {
-      my: '1.21875em', // 3 * 6.5px = 19.5px (75% of type size)
-    },
+    h1: { my: '0.8125em' },
+    h2: { my: '0.8125em', pt: '0.40625em' /* 2 * 6.5px = 13px */ },
+    h3: { my: '0.8125em', pt: '0.271em' /* 6.5px */ },
+    p: { my: '1.21875em' /* 3 * 6.5px = 19.5px (75% of type size) */ },
   },
 };
