@@ -93,25 +93,29 @@ export default {
         variant: 'text.heading',
         fontSize: '2xl',
         lineHeight: 'h1',
+        my: '0.8125em',
       },
       h2: {
         variant: 'text.heading',
         fontSize: 'xl',
         lineHeight: 'h2',
+        mt: '1.21875em', // +2 * 6.5px = 13px
+        mb: '0.8125em',
       },
       h3: {
         variant: 'text.heading',
         fontSize: 'lg',
         lineHeight: 'h3',
+        mt: '1.0835em', // +1 * 6.5px
+        mb: '0.8125em',
+      },
+      p: {
+        my: '1.21875em', // 3 * 6.5px = 19.5px (75% of type size)
       },
     },
     a: {
       color: 'primary',
       textUnderlineOffset: '0.25em',
     },
-    h1: { my: '0.8125em' },
-    h2: { my: '0.8125em', pt: '0.40625em' /* 2 * 6.5px = 13px */ },
-    h3: { my: '0.8125em', pt: '0.271em' /* 6.5px */ },
-    p: { my: '1.21875em' /* 3 * 6.5px = 19.5px (75% of type size) */ },
   },
 };
