@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import 'typeface-open-sans';
-import 'typeface-oswald';
+import '@openfonts/open-sans_latin-ext';
+import '@openfonts/oswald_latin-ext';
 
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';

@@ -12,6 +12,8 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@openfonts/open-sans_latin-ext": "^1.44.0",
+    "@openfonts/oswald_latin-ext": "^1.44.3",
     "@types/react": "^16.9.19",
     "@types/react-helmet": "^5.0.15",
     "@types/theme-ui": "^0.3.0",
@@ -27,8 +29,6 @@
     "preact": "^10.3.2",
     "react-helmet": "^6.0.0-beta.2",
     "theme-ui": "^0.3.1",
-    "typeface-open-sans": "^0.0.75",
-    "typeface-oswald": "^1.1.3",
     "typescript": "^3.7.5"
   },
   "devDependencies": {
