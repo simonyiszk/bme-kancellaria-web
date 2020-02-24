@@ -47,18 +47,26 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
         />
       </Helmet>
 
-      <header>{/* TODO */}</header>
-
-      <main>{children}</main>
-
-      <Footer
+      <div
         sx={{
-          variant: 'layout.container',
-          bg: 'text',
-          color: 'lightgray',
-          pb: 12,
+          display: 'flex',
+          flexDirection: 'column',
+          height: '100vh',
         }}
-      />
+      >
+        <header>{/* TODO */}</header>
+
+        <main sx={{ flex: 1 }}>{children}</main>
+
+        <Footer
+          sx={{
+            variant: 'layout.container',
+            bg: 'text',
+            color: 'lightgray',
+            pb: 12,
+          }}
+        />
+      </div>
     </React.StrictMode>
   );
 }
