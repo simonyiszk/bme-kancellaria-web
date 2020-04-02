@@ -8,11 +8,10 @@ export default function NewsPage(): JSX.Element {
   return (
     <Grid
       sx={theme => ({
-        display: 'grid',
-        gridColumnGap: '36px',
-        gridRowGap: '40px',
-        gridTemplateColumns: 'repeat(auto-fill, 500px)',
-        margin: '0 auto',
+        gridColumnGap: 12,
+        gridRowGap: 8,
+        gridTemplateColumns: 'repeat(auto-fill, 60ch)',
+        mx: 'auto',
         width: '90%',
         justifyContent: 'center',
         justifyItems: 'center',

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { Heading, Image, jsx, Styled } from 'theme-ui';
+import { Flex, Heading, Image, jsx, Styled } from 'theme-ui';
 
 import NewsImage from '../assets/news.png';
 
@@ -21,24 +21,21 @@ export function NewsArticleTeaser({
   thumbnailURL,
 }: NewsArticleTeaserProps): JSX.Element {
   return (
-    <article sx={{ maxWidth: '500px', width: 'auto' }}>
+    <article sx={{ width: '100%' }}>
       <Heading as="h3" sx={{ mb: 2 }}>
         Modern gyárak éjszakája a Műegyetemen
       </Heading>
-      <div
+      <Flex
         sx={{
-          display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-between',
-          maxHeight: '300px',
+          width: '100%',
         }}
       >
-        <div
+        <Flex
           sx={{
-            display: 'flex',
             flexDirection: 'column',
-            maxHeight: '200px',
-            maxWidth: '372px',
+            pr: 4,
           }}
         >
           <time dateTime="2019-10-29" sx={{ color: 'darkgray' }}>
@@ -50,18 +47,19 @@ export function NewsArticleTeaser({
             Technológiai Központ is több időpontban várja szeretettel az
             érdeklődőket november 15-én.
           </Styled.p>
-        </div>
+        </Flex>
         <Image
           src={NewsImage}
           sx={{
-            marginTop: '5px',
+            mt: 1,
+            minWidth: '128px',
             width: '128px',
             height: '128px',
             border: '2px solid darkgray',
             borderRadius: '10px',
           }}
         />
-      </div>
+      </Flex>
     </article>
   );
 }

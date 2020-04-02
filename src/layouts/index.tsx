@@ -57,7 +57,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
       >
         <Navbar />
 
-        <main /* sx={{ flex: 1 }} */>{children}</main>
+        <main sx={{ flex: 1 }}>{children}</main>
 
         <Footer
           sx={{
