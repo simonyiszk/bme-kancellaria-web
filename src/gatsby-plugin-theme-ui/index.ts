@@ -21,6 +21,7 @@ export default {
   fontSizes: {
     sm: '0.8rem', //  1.25 ** -1
     base: '1rem', //  1.25 **  0
+    md: '1.25rem',
     lg: '1.5rem', //  1.25 ** +2
     xl: '2rem', //    1.25 ** +3
     '2xl': '3rem', // 1.25 ** +5
@@ -43,6 +44,7 @@ export default {
     text: '#373a36', // PANTONE 447 C
     background: 'white',
     primary: '#c5003e', // PANTONE 1935 C, TODO: Consider #ce0037 and #c8102e
+    secondary: '#5d001d',
     lightgray: '#d9d9d6', // PANTONE Cool Gray 1 C
     darkgray: '#888b8d', // PANTONE Cool Gray 8 C
   },
@@ -68,7 +70,18 @@ export default {
   },
   links: {
     nav: {
+      fontFamily: 'heading',
+      fontSize: 'md',
+      textDecoration: 'none',
+      textTransform: 'uppercase',
       fontWeight: 'heading',
+      color: 'inherit',
+      '&.active': {
+        color: 'primary',
+      },
+      '&:hover, &:focus': {
+        color: 'secondary',
+      },
     },
     inverted: {
       textDecoration: 'none',

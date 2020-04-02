@@ -9,6 +9,7 @@ import { Helmet } from 'react-helmet';
 import { jsx } from 'theme-ui';
 
 import { Footer } from '../components/Footer';
+import { Navbar } from '../components/NavBar';
 
 interface LayoutProps {
   children?: React.ReactNode;
@@ -54,9 +55,9 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
           height: '100vh',
         }}
       >
-        <header>{/* TODO */}</header>
+        <Navbar />
 
-        <main sx={{ flex: 1 }}>{children}</main>
+        <main /* sx={{ flex: 1 }} */>{children}</main>
 
         <Footer
           sx={{

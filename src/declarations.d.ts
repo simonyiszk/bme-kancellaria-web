@@ -8,3 +8,5 @@
 // declare module '*.png';
 
 declare module 'gatsby-plugin-transition-link*';
+declare module '*.png';
+declare module '*.svg';
