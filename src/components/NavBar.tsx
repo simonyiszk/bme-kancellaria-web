@@ -19,7 +19,6 @@ export function Navbar(props: NavBarProps): JSX.Element {
       }}
     >
       <Flex
-        as="nav"
         sx={{
           alignItems: 'center',
           justifyContent: 'space-between',
