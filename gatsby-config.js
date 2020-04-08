@@ -26,6 +26,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-typescript',
+    'gatsby-plugin-svgr',
     // TODO: 'gatsby-theme-style-guide',
   ],
 };

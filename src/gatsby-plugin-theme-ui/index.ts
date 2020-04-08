@@ -46,6 +46,7 @@ export default {
     background: 'white',
     primary: '#c5003e', // PANTONE 1935 C, TODO: Consider #ce0037 and #c8102e
     secondary: '#5d001d',
+    original: '#a6192e',
     lightgray: '#d9d9d6', // PANTONE Cool Gray 1 C
     darkgray: '#888b8d', // PANTONE Cool Gray 8 C
   },
