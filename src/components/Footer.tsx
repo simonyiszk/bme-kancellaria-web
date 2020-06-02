@@ -2,6 +2,7 @@
 
 import { Box, jsx, Link, Styled } from 'theme-ui';
 
+import FooterHeader from './BaseComponents';
 import { Contact } from './Contact';
 
 export type FooterProps = React.PropsWithoutRef<
@@ -25,7 +26,7 @@ export function Footer(props: FooterProps): JSX.Element {
       {...props}
     >
       <div>
-        <Styled.h2>Kommunikáció</Styled.h2>
+        <FooterHeader>Kommunikáció</FooterHeader>
         <Contact
           name="Kovács Klára"
           jobTitle="Ügyvivő szakértő"
@@ -34,7 +35,7 @@ export function Footer(props: FooterProps): JSX.Element {
           address="1118 Budapest, Műegyetem rkp. 7–9., 2. em. 202"
         />
 
-        <Styled.h2>Rendezvények, terembérlés</Styled.h2>
+        <FooterHeader>Rendezvények, terembérlés</FooterHeader>
         <Contact
           name="Major Sándor"
           jobTitle="Igazgatási ügyintéző"
@@ -53,7 +54,7 @@ export function Footer(props: FooterProps): JSX.Element {
         })}
       >
         <div>
-          <Styled.h2>Hasznos oldalak</Styled.h2>
+          <FooterHeader>Hasznos oldalak</FooterHeader>
           <Box as="ul" variant="lists.unstyled" sx={{ variant: ['text.caps'] }}>
             <li>
               <Link href="https://kth.bme.hu/" variant="inverted">
@@ -95,7 +96,7 @@ export function Footer(props: FooterProps): JSX.Element {
         </div>
 
         <div>
-          <Styled.h2>Szolgáltatások</Styled.h2>
+          <FooterHeader>Szolgáltatások</FooterHeader>
           <Box as="ul" variant="lists.unstyled" sx={{ variant: ['text.caps'] }}>
             <li>
               <Link href="https://www.omikk.bme.hu/" variant="inverted">
