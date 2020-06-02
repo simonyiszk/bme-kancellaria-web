@@ -8,8 +8,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { jsx } from 'theme-ui';
 
-import { Footer } from '../components/Footer';
-import { Navbar } from '../components/NavBar';
+import { Footer } from '../components/footer/Footer';
+import { Navbar } from '../components/navbar/NavBar';
 
 interface LayoutProps {
   children?: React.ReactNode;

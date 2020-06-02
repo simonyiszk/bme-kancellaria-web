@@ -2,7 +2,7 @@
 
 import { Grid, jsx } from 'theme-ui';
 
-import { NewsArticleTeaser } from '../components/NewsArticleTeaser';
+import { NewsArticleTeaser } from '../components/news/NewsArticleTeaser';
 
 export default function NewsPage(): JSX.Element {
   return (

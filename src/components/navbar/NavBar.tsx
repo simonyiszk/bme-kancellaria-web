@@ -2,7 +2,7 @@
 
 import { Box, Flex, Image, jsx, Link, Styled } from 'theme-ui';
 
-import { ReactComponent as Logo } from '../assets/bme-kancellaria-logo.svg';
+import { ReactComponent as Logo } from '../../assets/bme-kancellaria-logo.svg';
 
 export type NavBarProps = React.PropsWithoutRef<JSX.IntrinsicElements['nav']>;
 

@@ -2,8 +2,8 @@
 
 import { Box, jsx, Link, Styled } from 'theme-ui';
 
-import FooterHeader from './BaseComponents';
-import { Contact } from './Contact';
+import { Contact } from '../atomic/Contact';
+import FooterHeader from './FooterHeader';
 
 export type FooterProps = React.PropsWithoutRef<
   JSX.IntrinsicElements['footer']

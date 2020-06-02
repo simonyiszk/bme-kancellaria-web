@@ -2,7 +2,7 @@
 
 import { Flex, Heading, Image, jsx, Styled } from 'theme-ui';
 
-import NewsImage from '../assets/news.png';
+import NewsImage from '../../assets/news.png';
 
 export interface NewsArticleTeaserProps {
   title: string;
