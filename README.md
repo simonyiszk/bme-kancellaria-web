@@ -3,6 +3,7 @@
 A Budapesti Műszaki és Gazdaságtudományi Egyetem Kancelláriájának hivatalos weboldala.
 
 - https://www.figma.com/file/8yJYU0LDpLLuqpoL5uml2d/Kancell%C3%A1ria
+- https://bme-kancellaria-web.netlify.app/
 
 ## Setup
 
