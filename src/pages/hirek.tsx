@@ -29,6 +29,7 @@ export default function NewsPage(): JSX.Element {
             érdeklődőket november 15-én."
               thumbnailURL={NewsImage}
               datePublished={{ raw: '2019-10-29', pretty: '2019. október 29.' }}
+              articleLink="/cikktest"
             />
           );
         })}
