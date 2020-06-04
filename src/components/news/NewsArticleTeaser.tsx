@@ -11,6 +11,7 @@ export interface NewsArticleTeaserProps {
     pretty: string;
   };
   thumbnailURL: string; // TODO: Use gatsby-image
+  articleLink: string;
 }
 
 export function NewsArticleTeaser({
@@ -18,13 +19,11 @@ export function NewsArticleTeaser({
   summary,
   datePublished,
   thumbnailURL,
+  articleLink,
 }: NewsArticleTeaserProps): JSX.Element {
   return (
     <article sx={{ width: '100%' }}>
-      <Link
-        sx={{ textDecoration: 'none', color: 'inherit' }}
-        to="/idedinamikusarticleutgeneralaskeneXD"
-      >
+      <Link sx={{ textDecoration: 'none', color: 'inherit' }} to={articleLink}>
         <Heading as="h3" sx={{ mb: 2 }}>
           {title}
         </Heading>
