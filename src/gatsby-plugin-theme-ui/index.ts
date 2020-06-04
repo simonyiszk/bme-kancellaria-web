@@ -14,7 +14,7 @@ export default {
     20: '5rem',
     24: '6rem',
   },
-  breakpoints: ['640px', '768px', '1024px', '1280px'],
+  breakpoints: ['425px', '768px', '1024px', '1280px'],
   fonts: {
     body: '"Open Sans", system-ui, sans-serif',
     heading: '"Oswald", system-ui, sans-serif',
@@ -77,6 +77,7 @@ export default {
       textDecoration: 'none',
       textTransform: 'uppercase',
       fontWeight: 'heading',
+      display: ['none', 'initial'],
       color: 'inherit',
       '&.active': {
         color: 'primary',

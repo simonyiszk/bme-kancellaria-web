@@ -57,7 +57,29 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
       >
         <Navbar />
 
-        <main sx={{ flex: 1 }}>{children}</main>
+        <main
+          sx={{
+            maxWidth: ['100%', '100%', '720px', '960px', '1140px'],
+            width: '100%',
+            flexShrink: 0,
+            flex: '1 0 auto',
+            p: 0,
+            pl: [
+              'calc(0.5rem + env(safe-area-inset-left));',
+              'calc(1rem + env(safe-area-inset-left));',
+              0,
+            ],
+            pr: [
+              'calc(0.5rem + env(safe-area-inset-right));',
+              'calc(1rem + env(safe-area-inset-right));',
+              0,
+            ],
+            m: 0,
+            mx: 'auto',
+          }}
+        >
+          {children}
+        </main>
 
         <Footer
           sx={{
