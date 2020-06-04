@@ -73,11 +73,12 @@ export default {
   links: {
     nav: {
       fontFamily: 'heading',
-      fontSize: 'md',
+      fontSize: ['base', 'base', 'base', 'md'],
       textDecoration: 'none',
       textTransform: 'uppercase',
       fontWeight: 'heading',
-      display: ['none', 'initial'],
+      whiteSpace: 'nowrap',
+      display: ['none', 'none', 'initial'],
       color: 'inherit',
       '&.active': {
         color: 'primary',
